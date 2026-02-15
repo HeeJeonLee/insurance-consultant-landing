@@ -52,6 +52,7 @@ npm run build
 
 `.env.example` 파일을 `.env`로 복사하고 필요한 값을 입력하세요.
 
+
 ## 📄 라이선스
 
 © 2026 이희전 보험상담사. All rights reserved.
