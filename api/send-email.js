@@ -72,8 +72,8 @@ export default async function handler(req, res) {
 
         <div style="text-align: center; padding: 20px; color: #94a3b8; font-size: 12px;">
           <p>PetCare+ | 수인AI브릿지 | 이희전 상담사</p>
-          <p>📞 010-5650-0670 | 📧 hejunl@hanmail.net</p>
-          <p>사업자등록번호: 119-13-49535 | 수원시 팔달구</p>
+          <p>대표전화: 010-5650-0670 | 📧 hejunl@hanmail.net</p>
+          <p>사업자등록번호: 151-09-03201 | 수원시 팔달구</p>
         </div>
       </div>
     `;
