@@ -13,7 +13,7 @@ export default function About() {
     {
       icon: "🐾",
       title: "펫보험 전문",
-      description: "5개 보험사 펫보험 상품을 비교하여 최적의 선택을 도와드립니다"
+      description: "8개 보험사(메리츠, 현대, DB, 삼성, KB, 한화, 농협, 롯데) 펫보험 상품을 비교분석하여 최적의 선택을 도와드립니다"
     },
     {
       icon: "🤖",
@@ -72,7 +72,7 @@ export default function About() {
             </div>
             <div>
               <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-2">
-                5개사
+                8개사
               </div>
               <div className="text-gray-600 font-medium">제휴 보험사</div>
             </div>

@@ -24,7 +24,8 @@ export default function Hero() {
             
             <p className="text-lg text-white/80 leading-relaxed">
               25년간 쌓아온 전문성으로 최적의 펫보험을 찾아드립니다.<br />
-              AI 챗봇으로 24시간 언제든지 상담 가능합니다.
+              AI 챗봇으로 24시간 언제든지 상담 가능합니다.<br />
+              <span className="text-sm text-yellow-300">💡 본 서비스는 정보 제공 및 상담 목적입니다.</span>
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -49,7 +50,7 @@ export default function Hero() {
                 <div className="text-sm text-white/70">금융 경력</div>
               </div>
               <div>
-                <div className="text-3xl font-bold">5개사</div>
+                <div className="text-3xl font-bold">8개사</div>
                 <div className="text-sm text-white/70">보험사 제휴</div>
               </div>
               <div>
