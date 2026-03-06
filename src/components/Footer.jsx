@@ -70,10 +70,10 @@ export default function Footer() {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
             <p>
-              © 2026 \uc774\ud76c\uc804 \ubcf4\ud5d8\uc0c1\ub2f4\uc0ac. All rights reserved.
+              © 2026 이희전 보험상담사. All rights reserved.
             </p>
             <p>
-              Powered by \uc218\uc778AI\ube0c\ub9277\ub9ac\ub354 | AI Technology Partner
+              Powered by 수인AI브릿지 | AI Technology Partner
             </p>
           </div>
         </div>
