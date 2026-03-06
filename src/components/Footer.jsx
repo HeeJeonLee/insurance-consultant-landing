@@ -63,10 +63,10 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 space-y-4">
-          <div className="bg-red-950/30 border border-red-800/50 rounded-lg p-4 text-xs text-red-200">
-            <p className="font-semibold mb-2">⚠️ 법적 공고</p>
-            <p className="mb-2">본 서비스는 정보 제공 및 상담 목적이며, 보험 권유 또는 중개행위가 아닙니다. 정확한 보험료, 보장 내용, 면책사항은 각 보험사의 공식 채널을 통해 확인하시기 바랍니다.</p>
-            <p>보험설계사 상담은 보험업법에 따라 진행되며, 본 플랫폼과 별개의 개인 상담에 해당합니다.</p>
+          <div className="border border-gray-700 rounded-lg px-4 py-3 bg-gray-800/50">
+            <p className="text-gray-500 text-xs leading-relaxed text-center">
+              ⚠️ <span className="text-gray-400">면책 공고</span> | 본 서비스는 정보 제공 및 상담 목적이며, 보험 권유 또는 중개행위가 아닙니다. 정확한 내용은 각 보험사에 직접 문의하시기 바랍니다.
+            </p>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
             <p>

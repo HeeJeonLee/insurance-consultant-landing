@@ -95,15 +95,14 @@ export default function Contact() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               무료 상담 신청
             </h2>
-            <p className="text-xl text-gray-600 mb-4">
+            <p className="text-xl text-gray-600 mb-6">
               전문가의 맞춤 상담을 받아보세요. 24시간 내 연락드리겠습니다.
             </p>
-            <p className="text-sm text-red-600 font-semibold mb-2">
-              ⚠️ 본 서비스는 정보 제공 및 상담 목적이며, 보험 권유가 아닙니다.
-            </p>
-            <p className="text-xs text-gray-600">
-              정확한 보험료와 보장 내용은 각 보험사에 직접 확인 후 가입하시기 바랍니다.
-            </p>
+            <div className="inline-block border border-gray-300 rounded-lg px-4 py-2 bg-gray-50">
+              <p className="text-gray-500 text-xs">
+                ⚠️ 면책 공고 | 본 서비스는 정보 제공 및 상담 목적이며, 보험 권유가 아닙니다.
+              </p>
+            </div>
           </div>
 
           <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12">
