@@ -21,7 +21,8 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Invalid messages format' });
   }
 
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  // 환경변수에서 API 키 가져오기 (줄바꿈 제거)
+  const apiKey = (process.env.ANTHROPIC_API_KEY || process.env.VITE_ANTHROPIC_API_KEY || '').trim();
 
   if (!apiKey) {
     console.error('ANTHROPIC_API_KEY is not set');
