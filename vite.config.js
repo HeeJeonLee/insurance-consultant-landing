@@ -5,5 +5,14 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/[name]-v3-[hash].js`,
+        chunkFileNames: `assets/[name]-v3-[hash].js`,
+        assetFileNames: `assets/[name]-v3-[hash].[ext]`
+      }
+    }
   }
 })
