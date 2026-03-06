@@ -29,6 +29,24 @@ export default function Services() {
       product: "굿앤굿",
       color: "from-purple-500 to-indigo-600",
       features: ["안정적 보장", "체계적 관리", "믿을 수 있는 브랜드"]
+    },
+    {
+      company: "한화손보",
+      product: "펫함께",
+      color: "from-orange-500 to-red-600",
+      features: ["실속형 보장", "합리적 보험료", "핵심 보장 집중"]
+    },
+    {
+      company: "농협손보",
+      product: "펫케어",
+      color: "from-green-600 to-teal-600",
+      features: ["배상책임 특화", "장례비용 보장", "안정적 보험료"]
+    },
+    {
+      company: "롯데손보",
+      product: "펫건강",
+      color: "from-pink-500 to-rose-600",
+      features: ["기본 보장 탄탄", "간편 가입", "합리적 보험료"]
     }
   ]
 
@@ -40,7 +58,7 @@ export default function Services() {
             제휴 펫보험 상품
           </h2>
           <p className="text-xl text-gray-600">
-            5개 보험사의 다양한 펫보험 상품을 비교하고 최적의 선택을 도와드립니다
+            8개 보험사의 다양한 펫보험 상품을 비교하고 최적의 선택을 도와드립니다
           </p>
         </div>
 
@@ -84,7 +102,7 @@ export default function Services() {
                   AI 자동 비교 플랫폼
                 </p>
                 <p className="text-white/90 mb-4">
-                  5개 보험사를 한 번에 비교하고 최적의 펫보험을 찾아보세요
+                  8개 보험사를 한 번에 비교하고 최적의 펫보험을 찾아보세요
                 </p>
               </div>
               <a 
