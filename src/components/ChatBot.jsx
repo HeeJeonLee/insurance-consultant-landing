@@ -56,13 +56,17 @@ export default function ChatBot({ isOpen: propIsOpen, setIsOpen: propSetIsOpen }
       // 현재 사용자 메시지 추가
       chatHistory.push({ role: 'user', content: userMessage });
 
+      console.log('[ChatBot] API 호출 시작:', chatHistory);
+
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: chatHistory })
       });
 
+      console.log('[ChatBot] 응답 상태:', response.status);
       const data = await response.json();
+      console.log('[ChatBot] 응답 데이터:', data);
 
       if (response.ok && data.content) {
         setMessages(prev => [...prev, { 
@@ -73,10 +77,10 @@ export default function ChatBot({ isOpen: propIsOpen, setIsOpen: propSetIsOpen }
         throw new Error(data.error || '응답 오류');
       }
     } catch (err) {
-      console.error('Chat error:', err);
+      console.error('[ChatBot] 에러:', err);
       setMessages(prev => [...prev, { 
         role: 'assistant', 
-        content: '죄송해요, 일시적인 오류가 발생했어요. 잠시 후 다시 시도해 주세요! 🙏' 
+        content: `오류 발생: ${err.message}` 
       }]);
     } finally {
       setLoading(false);
