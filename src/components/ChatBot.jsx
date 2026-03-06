@@ -9,18 +9,8 @@ export default function ChatBot({ isOpen: propIsOpen, setIsOpen: propSetIsOpen }
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: `안녕하세요! 🐾 PetCare+ AI 상담사입니다.
-
-25년 경력의 펫보험 전문가로서 도와드리겠습니다.
-
-어떤 도움이 필요하신가요?
-• 보험 상품 추천
-• 견종별 맞춤 추천
-• 보험료 문의
-• 보장 내용 비교
-• 가입 절차 안내
-
-편하게 질문해주세요! 😊`
+      content: `안녕하세요! PetCare+ AI 상담사입니다 🐾
+펫보험에 대해 궁금한 점을 물어보세요!`
     }
   ]);
   const [input, setInput] = useState('');
@@ -96,7 +86,7 @@ export default function ChatBot({ isOpen: propIsOpen, setIsOpen: propSetIsOpen }
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 w-96 h-[550px] bg-white rounded-2xl shadow-2xl flex flex-col border border-gray-200 overflow-hidden">
+    <div className="fixed bottom-6 right-6 z-50 w-96 h-[500px] bg-white rounded-2xl shadow-2xl flex flex-col border border-gray-200 overflow-hidden">
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
@@ -156,28 +146,35 @@ export default function ChatBot({ isOpen: propIsOpen, setIsOpen: propSetIsOpen }
       </div>
 
       {/* Input */}
-      <form onSubmit={handleSend} className="p-4 border-t bg-white">
+      <form onSubmit={handleSend} className="p-3 border-t bg-white">
         <div className="flex gap-2">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="펫보험에 대해 물어보세요..."
-            className="flex-1 border border-gray-300 px-4 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+            className="flex-1 border border-gray-300 px-4 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
             disabled={loading}
           />
           <button
             type="submit"
             disabled={loading || !input.trim()}
-            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
           >
             전송
           </button>
         </div>
-        <p className="text-xs text-gray-400 mt-2 text-center">
-          Claude AI 기반 · 24시간 무료 상담 · 정보제공 목적
-        </p>
       </form>
+      {/* 상담 신청 버튼 */}
+      <div className="p-3 border-t bg-gray-50 rounded-b-2xl">
+        <a 
+          href="#contact"
+          onClick={handleClose}
+          className="block w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white py-2.5 rounded-full font-semibold text-center hover:shadow-lg transition text-sm"
+        >
+          🧑‍💼 전문가 상담 신청하기
+        </a>
+      </div>
     </div>
   );
 }
